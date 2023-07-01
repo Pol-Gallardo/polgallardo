@@ -51,7 +51,25 @@ const Home = () => {
         </motion.div>
       </div>
       {/* image */}
-      <div></div>
+      <div className='w-[1200px] h-full absolute right-0 bottom-0'>
+        {/* bg image */}
+        <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute mix-blend-color-dodge translate-z-0'>
+        </div>
+        {/* particles */}
+        <div>
+        
+        </div>
+        {/* avatar */}
+        <motion.div
+        variants={fadeIn('up', 0.5)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        transition={{duration: 1, ease: 'easeInOut'}}
+        className='w-full h-full max-w-[737px] max-h-[778px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
+          <Avatar />
+        </motion.div>
+      </div>
     </div>
   </div>;
 };
