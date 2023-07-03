@@ -7,7 +7,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 // icons
-import { RxCrop, RxPencil2, RxDesktop, RxReader, RxRocket, RxArrowTopRight } from "react-icons/rx";
+import { RxBackpack, RxPencil2, RxDesktop, RxReader, RxArrowTopRight } from "react-icons/rx";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
@@ -15,12 +15,12 @@ import { FreeMode, Pagination } from "swiper";
 // data
 export const serviceData = [
   {
-    icon: <RxCrop />,
+    icon: <RxBackpack />,
     title: 'Consulting',
     description: 'Technical guidance. I will explain to you the Smart Contracts and the necessary architecture to carry out your project.',
   },
   {
-    icon: <RxDesktop />,
+    icon: <RxReader />,
     title: 'Smart Contracts Development',
     description: 'We develop your ideas with the utmost professionalism to bring them to life.',
   },
@@ -35,7 +35,7 @@ export const serviceData = [
     description: 'The same process as a Simple Audit is followed, and scripts are used to test the functionality.',
   },
   {
-    icon: <RxReader />,
+    icon: <RxDesktop />,
     title: 'Web Development',
     description: 'We develop your application to take your business to the next level.',
   },
