@@ -11,9 +11,6 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
   SiSolidity,
   SiEthereum,
 } from 'react-icons/si';
@@ -34,42 +31,24 @@ export const aboutData = [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
-          <SiFramer />,
         ],
-      },
-      {
-        title: 'UI/UX Design',
-        icons: [ <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
+      }
     ],
   },
   {
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Web Developer - Freelance',
+        stage: '2022 - 2023',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Blockchain Developer - Freelance',
+        stage: '2022 - 2023',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
+        title: 'Smart Contract Auditor - Freelance',
+        stage: '2023 - 2023',
       },
     ],
   },
@@ -77,16 +56,16 @@ export const aboutData = [
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Basic programming - Platzi ',
+        stage: '2021',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Full Stack Developer - Open-bootcamp',
+        stage: '2021 - 2022',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Blockchain Developer - Nuclio Digital School',
+        stage: '2022 - 2023',
       },
     ],
   },
@@ -126,13 +105,13 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden' 
-          className='h2'>Captivating <span className='text-accent'>stories</span> birth magnificent deigns.</motion.h2>
+          className='h2'>Contributing to the <span className='text-accent'>development</span> of innovative web3 applications.</motion.h2>
           <motion.p
           variants={fadeIn('right', 0.4)}
           initial='hidden'
           animate='show'
           exit='hidden' 
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>1 year ago, I began freelancing as a developer. Since then, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and cosumer use.</motion.p>
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>2 years ago, I started my journey to become a developer. Since then, I haven't stopped building and contributing within the web3 space. I have provided consultancy services and collaborated on digital products for both business and consumer use.</motion.p>
           {/* counters */}
           <motion.div
           variants={fadeIn('right', 0.6)}
