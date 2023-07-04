@@ -111,7 +111,7 @@ const About = () => {
           initial='hidden'
           animate='show'
           exit='hidden' 
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>2 years ago, I started my journey to become a developer. Since then, I haven't stopped building and contributing within the web3 space. I have provided consultancy services and collaborated on digital products for both business and consumer use.</motion.p>
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'/* eslint-disable react/no-unescaped-entities */>2 years ago, I started my journey to become a developer. Since then, I haven't stopped building and contributing within the web3 space. I have provided consultancy services and collaborated on digital products for both business and consumer use.</motion.p>  
           {/* counters */}
           <motion.div
           variants={fadeIn('right', 0.6)}
@@ -178,7 +178,7 @@ const About = () => {
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className='text-2xl text-white'>{icon}</div>;
+                      return <div key={itemIndex} className='text-2xl text-white'>{icon}</div>;
                     })}
                   </div>
                   
