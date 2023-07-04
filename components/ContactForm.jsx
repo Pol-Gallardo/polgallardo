@@ -22,20 +22,13 @@ export const Contact = () => {
   
     const handleSubmit = async (e) => {
       e.preventDefault();
-  
-      console.log('name', name);
-      console.log('email', email);
-      console.log('subject', subject);
-      console.log('message', message);
-  
       const res = await fetch('api/contact', {
         method: 'POST',
         headers: {
           'Content-type': 'application/json'
         },
-        body: JSON.stringify({name, email, subject, message}),
+        body: JSON.stringify({name:name, email:email, subject:subject, message:message}),
       });
-  
       const {msg} = await res.json();
       setError(msg);
       console.log(error);
