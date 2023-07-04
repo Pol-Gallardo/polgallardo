@@ -45,8 +45,8 @@ export const Contact = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='h2 text-center mb-12'>
-              Let's <span className='text-accent' /* eslint-disable react/no-unescaped-entities */>connect.</span> 
+            className='h2 text-center mb-12'/* eslint-disable react/no-unescaped-entities */>
+              Let's <span className='text-accent'>connect.</span> 
             </motion.h2>
             {/* form */}
             <motion.form
