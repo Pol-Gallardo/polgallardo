@@ -1,3 +1,11 @@
+import { connectToDatabase } from '../../utils/mongo';
+
+export default async function handler(req, res) {
+  const { method } = req;
+
+  const { db } = await connectToDatabase();
+
+  const collection = db.collection('contacto');
 
   switch (method) {
     case 'GET':
