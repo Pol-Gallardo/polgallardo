@@ -61,27 +61,24 @@ export const Contact = () => {
                   <input 
                   onChange={(e) => setName(e.target.value)}
                   value={name}
-                  type='text' placeholder='name' className='input' />
+                  type='text' placeholder='Name' className='input' />
                   <input 
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
-                  type='text' placeholder='email' className='input' />
+                  type='text' placeholder='Email' className='input' />
                 </div>
                 <input 
                 onChange={(e) => setSubject(e.target.value)}
                 value={subject}
-                type='text' placeholder='subject' className='input' />
+                type='text' placeholder='Subject' className='input' />
                 <textarea 
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
-                placeholder='message' className='textarea'></textarea>
+                placeholder='Message' className='textarea'></textarea>
                 <button className='btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group'>
                   <span className='group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500'>Let's talk</span>
                   <BsArrowRight className='-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]'/>
                 </button>
-                <div className='flex flex-col'>
-                  <div className='text-accent'>Error message</div>
-                </div>
               </motion.form>
           </div>
         </div>
@@ -91,4 +88,3 @@ export const Contact = () => {
   };
   
   export default Contact;
-  

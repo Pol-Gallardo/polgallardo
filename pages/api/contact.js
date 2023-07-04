@@ -1,11 +1,3 @@
-import { connectToDatabase } from '../../utils/mongo';
-
-export default async function handler(req, res) {
-  const { method } = req;
-
-  const { db } = await connectToDatabase();
-
-  const collection = db.collection('contacto');
 
   switch (method) {
     case 'GET':
@@ -13,9 +5,9 @@ export default async function handler(req, res) {
       res.status(200).json({ lista });
       break;
     case 'POST':
-      const { name, email, telefono, preguntas } = req.body;
+      const { name, email, subject, message } = req.body;
       const timestamp = Date.now()      
-      const result = await collection.insertOne({ name, email, telefono, preguntas, timestamp });
+      const result = await collection.insertOne({ name, email, subject, message, timestamp });
       res.status(201).json("enviado");
       break;
 //    case 'PUT':
